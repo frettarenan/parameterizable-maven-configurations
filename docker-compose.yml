@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nexus:
+    image: sonatype/nexus3:3.47.1
+    ports:
+      - "8081:8081"
+      - "8123:8123"
+    volumes:
+      - ./nexus-data:/nexus-data
